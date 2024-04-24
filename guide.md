@@ -73,3 +73,8 @@ kcov --exclude-pattern='/.cargo/' --exclude-path='/usr/include/' ./coverage/ ./t
 ---
 
 rust_coverage_test-4802b599f84711d2
+
+
+
+  543  cargo install cargo-kcov
+  544  cargo kcov

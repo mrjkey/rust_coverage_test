@@ -14,6 +14,10 @@ pub fn add(a: i32, b: i32) -> i32 {
     return a + b;
 }
 
+pub fn sub(a: i32, b: i32) -> i32 {
+    return a - b;
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -21,13 +25,8 @@ mod tests {
     #[test]
     fn test_add() {
         assert_eq!(add(2, 3), 5);
+        // assert_eq!(add(-1, 1), 0);
     }
-}
-
-// test main for coverage
-#[cfg(test)]
-mod main_test {
-    use super::*;
 
     #[test]
     fn test_main() {

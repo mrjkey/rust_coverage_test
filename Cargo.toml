@@ -7,5 +7,5 @@ edition = "2021"
 
 [dependencies]
 
-[build]
-profiler = true
+[tests]
+pattern = "**/*.rs"
