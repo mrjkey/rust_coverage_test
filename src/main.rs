@@ -1,3 +1,7 @@
+mod more_funcs;
+#[cfg(test)]
+mod tests;
+
 fn main() {
     println!("Hello, world!");
     let a = 2;
@@ -18,8 +22,12 @@ pub fn sub(a: i32, b: i32) -> i32 {
     return a - b;
 }
 
+pub fn uncovered_main_fn() {
+    println!("This function is not covered by tests");
+}
+
 #[cfg(test)]
-mod tests {
+mod local_tests {
     use super::*;
 
     #[test]

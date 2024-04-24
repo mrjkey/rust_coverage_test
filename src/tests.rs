@@ -1,3 +1,5 @@
+use crate::sub;
+
 #[cfg(test)]
 mod tests {
     use super::*;
